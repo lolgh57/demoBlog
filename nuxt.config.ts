@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  target: "static",
   pages: true,
   modules: [
     "@nuxtjs/tailwindcss",
@@ -18,16 +19,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     "nuxt-graphql-client"
   ],
-  nitro: {
-    baseURL: "http://localhost:3000",
-    prerender: {
-      crawlLinks: true,
-      failOnError: false
-    }
-  },
-  routeRules: {
-    "/**": { ssr: false }
-  },
   runtimeConfig: {
     public: {
       GQL_HOST: 'https://asrp.media/public-graphql'
@@ -53,14 +44,6 @@ export default defineNuxtConfig({
     langDir: 'locales/',
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts'
-  },
-  generate:{
-    routes: [
-      '/',
-      '/blog',
-      '/contact',
-      '/login'
-    ]
   },
   colorMode: {
     preference: 'dark',
