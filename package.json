@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clean": "rm -rf .nuxt dist",
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "npm run clean && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },

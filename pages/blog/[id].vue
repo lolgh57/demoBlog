@@ -6,7 +6,6 @@ import { useI18n } from 'vue-i18n';
 const route = useRoute();
 const id = ref(String(route.params.id));
 const currentLanguage = useI18n().locale.value;
-const GqlInstance = useGql()
 
 useGqlHeaders({ 'languagecode': currentLanguage });
 const data = await GqlArticle({

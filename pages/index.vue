@@ -6,6 +6,7 @@
     useHead({
         title: title + ' | Explore Demo',
     })
+    
 </script>
 
 <template>

@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    "/**": { swr: true }
+    "/**": { ssr: false }
   },
   runtimeConfig: {
     public: {
@@ -51,8 +51,16 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     lazy: true,
     langDir: 'locales/',
-    strategy: 'no_prefix', //prefix_except_default
+    strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts'
+  },
+  generate:{
+    routes: [
+      '/',
+      '/blog',
+      '/contact',
+      '/login'
+    ]
   },
   colorMode: {
     preference: 'dark',
