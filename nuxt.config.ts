@@ -18,6 +18,16 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     "nuxt-graphql-client"
   ],
+  nitro: {
+    baseURL: "http://localhost:3000",
+    prerender: {
+      crawlLinks: true,
+      failOnError: false
+    }
+  },
+  routeRules: {
+    "/**": { swr: true }
+  },
   runtimeConfig: {
     public: {
       GQL_HOST: 'https://asrp.media/public-graphql'
