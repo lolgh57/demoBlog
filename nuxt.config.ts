@@ -54,6 +54,14 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts'
   },
+  generate:{
+    routes: [
+      '/',
+      '/blog',
+      '/contact',
+      '/login'
+    ]
+  },
   colorMode: {
     preference: 'dark',
     classSuffix: '',
