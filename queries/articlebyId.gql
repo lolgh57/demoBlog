@@ -1,0 +1,18 @@
+query Article($record: StringIdOrSlug!) {
+  article(record: $record) {
+    ArticleContents {
+      Language {
+        code
+      }
+      content
+    }
+    createdAt
+    description
+    title
+    Authors {
+      avatar
+      fullName
+    }
+    imageWeb
+  }
+}

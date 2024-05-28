@@ -1,0 +1,10 @@
+query Articles($limit: Int) {
+  articles(limit: $limit) {
+    Articles {
+      id
+      title
+      createdAt
+      imageWeb
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "title-home": "Басты бет | Explore Demo",
+    "title-blog": "Блог | Explore Demo",
+    "title-login": "Кіру | Explore Demo",
+    "title-contact": "Байланыс | Explore Demo",
+    "menu-home-button": "Басты бет",
+    "menu-blog-button": "Блог",
+    "menu-contact-button": "Байланыс",
+    "menu-login-button": "Кіру",
+    "menu-lang-button": "Тіл",
+    "menu-lang-label-button": "Тілді өзгерту",
+    "main-page-title": "Explore Demo",
+    "main-page-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi at odio vitae inventore, ipsum ullam fugiat non id voluptatibus voluptates voluptate. Esse iste quia odit cumque commodi eos doloribus perferendis corrupti corporis consequuntur repellat ab labore cum, autem placeat asperiores expedita illum dolore unde eveniet. A iste, atque id eaque deleniti nemo laborum obcaecati! Dolor omnis blanditiis doloribus autem debitis eveniet velit minima, illum nam maiores ratione. Quidem esse adipisci, maiores eius asperiores pariatur vitae nobis voluptatem quos ad recusandae voluptate ducimus repudiandae dignissimos incidunt blanditiis quasi долorum ут quo aperiam, accusantium temporа! Esse voluptas, consectetur exercitationem illum dolorem fugiat.",
+    "blog-page-title": "Блог",
+    "blog-page-description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum atque dolorem deserunt nisi aliquam soluta laboriosam? Ut voluptate, assumenda error exercitationem dolore in, quo nihil ad, veritatis iste facilis.",
+    "blog-page-author": "Автор: ",
+    "contact-page-title": "Бізбен байланысыңыз",
+    "contact-page-description": "телефон жоқ кешіріңіз бұл өзінен өзі болды",
+    "login-page-title": "Кіру",
+    "login-page-input-email": "Пошта",
+    "login-page-input-password": "Құпия сөз",
+    "login-page-button": "Кіру"
+}

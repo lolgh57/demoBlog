@@ -1,0 +1,23 @@
+{
+    "title-home": "Inicio | Explore Demo",
+    "title-blog": "Blog | Explore Demo",
+    "title-login": "Iniciar sesión | Explore Demo",
+    "title-contact": "Contacto | Explore Demo",
+    "menu-home-button": "Inicio",
+    "menu-blog-button": "Blog",
+    "menu-contact-button": "Contacto",
+    "menu-login-button": "Iniciar sesión",
+    "menu-lang-button": "Idioma",
+    "menu-lang-label-button": "Cambiar idioma",
+    "main-page-title": "Explore Demo",
+    "main-page-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at odio vitae inventore, ipsum ullam fugiat non id voluptatibus voluptates voluptate. Esse iste quia odit cumque commodi eos doloribus perferendis corrupti corporis consequuntur repellat ab labore cum, autem placeat asperiores expedita illum dolore unde eveniet. A iste, atque id eaque deleniti nemo laborum obcaecati! Dolor omnis blanditiis doloribus autem debitis eveniet velit minima, illum nam maiores ratione. Quidem esse adipisci, maiores eius asperiores pariatur vitae nobis voluptatem quos ad recusandae voluptate ducimus repudiandae dignissimos incidunt blanditiis quasi dolorum ut quo aperiam, accusantium tempora! Esse voluptas, consectetur exercitationem illum dolorem fugiat.",
+    "blog-page-title": "Blog",
+    "blog-page-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laborum atque dolorem deserunt nisi aliquam soluta laboriosam? Ut voluptate, assumenda error exercitationem dolore in, quo nihil ad, veritatis iste facilis.",
+    "blog-page-author": "Por: ",
+    "contact-page-title": "Contáctenos",
+    "contact-page-description": "no hay teléfono, lo siento, simplemente pasó así",
+    "login-page-title": "Iniciar sesión",
+    "login-page-input-email": "Correo electrónico",
+    "login-page-input-password": "Contraseña",
+    "login-page-button": "Iniciar sesión"
+}

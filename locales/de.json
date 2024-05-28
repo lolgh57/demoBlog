@@ -1,0 +1,23 @@
+{
+    "title-home": "Startseite | Explore Demo",
+    "title-blog": "Blog | Explore Demo",
+    "title-login": "Anmelden | Explore Demo",
+    "title-contact": "Kontakt | Explore Demo",
+    "menu-home-button": "Startseite",
+    "menu-blog-button": "Blog",
+    "menu-contact-button": "Kontakt",
+    "menu-login-button": "Anmelden",
+    "menu-lang-button": "Sprache",
+    "menu-lang-label-button": "Sprache ändern",
+    "main-page-title": "Explore Demo",
+    "main-page-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at odio vitae inventore, ipsum ullam fugiat non id voluptatibus voluptates voluptate. Esse iste quia odit cumque commodi eos doloribus perferendis corrupti corporis consequuntur repellat ab labore cum, autem placeat asperiores expedita illum dolore unde eveniet. A iste, atque id eaque deleniti nemo laborum obcaecati! Dolor omnis blanditiis doloribus autem debitis eveniet velit minima, illum nam maiores ratione. Quidem esse adipisci, maiores eius asperiores pariatur vitae nobis voluptatem quos ad recusandae voluptate ducimus repudiandae dignissimos incidunt blanditiis quasi dolorum ut quo aperiam, accusantium tempora! Esse voluptas, consectetur exercitationem illum dolorem fugiat.",
+    "blog-page-title": "Blog",
+    "blog-page-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laborum atque dolorem deserunt nisi aliquam soluta laboriosam? Ut voluptate, assumenda error exercitationem dolore in, quo nihil ad, veritatis iste facilis.",
+    "blog-page-author": "Von: ",
+    "contact-page-title": "Kontaktieren Sie uns",
+    "contact-page-description": "Kein Telefon, tut mir leid, es ist einfach so passiert",
+    "login-page-title": "Anmelden",
+    "login-page-input-email": "E-Mail",
+    "login-page-input-password": "Passwort",
+    "login-page-button": "Anmelden"
+}

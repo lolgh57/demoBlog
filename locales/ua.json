@@ -1,0 +1,23 @@
+{   
+    "title-home": "Головна | Explore Demo",
+    "title-blog": "Блог | Explore Demo",
+    "title-login": "Логін | Explore Demo",
+    "title-contact": "Контакти | Explore Demo",
+    "menu-home-button": "Головна",
+    "menu-blog-button": "Блог",
+    "menu-contact-button": "Контакти",
+    "menu-login-button": "Увійти",
+    "menu-lang-button": "Мова",
+    "menu-lang-label-button": "Змінити мову",
+    "main-page-title": "Explore Demo",
+    "main-page-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi at odio vitae inventore, ipsum ullam fugiat non id voluptatibus voluptates voluptate. Esse iste quia odit cumque commodi eos doloribus perferendis corrupti corporis consequuntur repellat ab labore cum, autem placeat asperiores expedita illum dolore unde eveniet. A iste, atque id eaque deleniti nemo laborum obcaecati! Dolor omnis blanditiis doloribus autem debitis eveniet velit minima, illum nam maiores ratione. Quidem esse adipisci, maiores eius asperiores pariatur vitae nobis voluptatem quos ad recusandae voluptate ducimus repudiandae dignissimos incidunt blanditiis quasi dolorum ut quo aperiam, accusantium tempora! Esse voluptas, consectetur exercitationem illum dolorem fugiat.",
+    "blog-page-title": "Блог",
+    "blog-page-description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum atque dolorem deserunt nisi aliquam soluta laboriosam? Ut voluptate, assumenda error exercitationem dolore in, quo nihil ad, veritatis iste facilis.",
+    "blog-page-author": "Автор: ",
+    "contact-page-title": "Зв'яжіться з нами",
+    "contact-page-description": "телефону немає, вибачте, саме так вийшло",
+    "login-page-title": "Вхід",
+    "login-page-input-email": "Пошта",
+    "login-page-input-password": "Пароль",
+    "login-page-button": "Увійти"
+}

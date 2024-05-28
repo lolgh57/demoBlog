@@ -5,15 +5,15 @@ export interface IMenuItem{
 
 export const MENU_DATA: IMenuItem[] = [
     {
-        name: 'Home',
+        name: 'menu-home-button',
         url: '/',
     },
     {
-        name: 'Blog',
+        name: 'menu-blog-button',
         url: '/blog',
     },
     {
-        name: 'Contact',
+        name: 'menu-contact-button',
         url: '/contact',
     },
 ]
