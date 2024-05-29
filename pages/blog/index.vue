@@ -30,6 +30,9 @@
         <span class="text-secondary-foreground">
             {{ $t('blog-page-description') }}
         </span>
+        <NuxtLink to="blog/create" class="text-secondary-foreground bg-header flex items-center justify-center p-3 rounded-lg transition-all hover:bg-secondary mt-4">
+            Создать блог
+        </NuxtLink>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5 place-items-center">
             <UiCard 
                 v-for="article of data?.articles?.Articles"

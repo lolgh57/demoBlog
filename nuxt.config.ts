@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  target: "static",
   pages: true,
   modules: [
     "@nuxtjs/tailwindcss",
@@ -17,7 +16,9 @@ export default defineNuxtConfig({
     }],
     "@nuxtjs/i18n",
     '@nuxtjs/color-mode',
-    "nuxt-graphql-client"
+    "nuxt-graphql-client",
+    "nuxt-tiptap-editor",
+    "@vesp/nuxt-fontawesome"
   ],
   runtimeConfig: {
     public: {
@@ -48,5 +49,13 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark',
     classSuffix: '',
+  },
+  tiptap:{
+    prefix: "Tiptap",
+  },
+  fontawesome: {
+    icons: {
+      solid: ['font', 'italic', 'bold', 'strikethrough', 'code', 'eraser', 'heading', 'list-ul', 'list-ol', 'quote-left', 'window-minimize', 'rotate-left', 'rotate-right', 'square-caret-down'],
+    }
   }
 })
