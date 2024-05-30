@@ -49,7 +49,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="bg-header fixed top-0 left-0 h-auto w-full flex justify-between items-center p-4">
+  <header class="bg-header fixed z-10 top-0 left-0 h-auto w-full flex justify-between items-center p-4">
     <NuxtLink to="/" class="block">
       <NuxtImg src="/logo.svg" alt="logo" width="77px" class="mx-100"/>
     </NuxtLink>
