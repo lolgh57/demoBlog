@@ -69,7 +69,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div class="flex sm:flex-col-reverse lg:flex-row items-top justify-center gap-3 max-w-[1240px] m-auto editor-layout">
+    <div class="flex flex-col-reverse lg:flex-row items-top justify-center gap-3 max-w-[1240px] m-auto editor-layout">
         <div v-if="editor" class="editor-toolbar flex flex-col gap-2">
             <div class="cursor-pointer px-4 text-sm py-1 bg-header text-secondary-foreground border border-dashed rounded-lg border-secondary-foreground w-full h-fit">
                 <p class="text-lg">Select block</p>
