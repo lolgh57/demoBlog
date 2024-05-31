@@ -170,10 +170,6 @@ onMounted(() => {
                         <font-awesome icon="square-caret-down" class="text-muted-foreground"/>
                         New line
                     </button>
-                    <button class="text-left hover:bg-secondary px-2 py-1 rounded transition-all" @click="editor.chain().focus().unsetAllMarks().run()">
-                        <font-awesome icon="eraser" class="text-muted-foreground"/>
-                        Clear marks
-                    </button>
                     <button
                         class="text-left hover:bg-secondary px-2 py-1 rounded transition-all"
                         @click="editor.chain().focus().undo().run()"
