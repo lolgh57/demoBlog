@@ -16,6 +16,7 @@
     "@nuxtjs/i18n": "^8.3.1",
     "@radix-icons/vue": "^1.0.0",
     "@tiptap/extension-code-block": "^2.4.0",
+    "@tiptap/extension-dropcursor": "^2.4.0",
     "@tiptap/extension-text-align": "^2.4.0",
     "@vue/compiler-sfc": "^3.4.27",
     "@vueuse/core": "^10.9.0",

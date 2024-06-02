@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import TextAlign from '@tiptap/extension-text-align';
 import { useEditor } from '@tiptap/vue-3'
-const isMenuOpen = ref(false)
 const isSelectMenuOpen = ref(false)
+const imageUrl = ref('');
+const videoUrl = ref('');
 const menuPosition = ref({ top: 0, left: 0 })
 const editorStyles = "bg-header w-full text-secondary-foreground p-4 rounded-lg border border-secondary-foreground min-h-96"
 
@@ -14,6 +15,11 @@ const editor = useEditor({
     },
     content: "<h1 class='text-3xl'>Вы на правильном пути!🎉</h1><p>TipTap легко интегрируется, настраивается и стилизуется. Куча дополнений типо таблиц, картинки, я добавил мало кнопочек, там больше. Вот ссылка - https://tiptap.dev/docs/editor/introduction</p>",
     extensions: [
+        TiptapImage,
+        TiptapYoutube.configure({
+            width: 640,
+            height: 360,
+        }),
         TiptapStarterKit,
         TiptapPlaceholder.configure({
             emptyEditorClass: "is-editor-empty",
@@ -29,6 +35,16 @@ const editor = useEditor({
         })
 ],
 })
+function addVideo() {
+  if (videoUrl.value && editor.value) {
+    editor.value.chain().focus().setYoutubeVideo({ src: videoUrl.value }).run();
+  }
+}
+function addImage() {
+  if (imageUrl.value && editor.value) {
+    editor.value.chain().focus().setImage({ src: imageUrl.value }).run();
+  }
+}
 
 function handleSelectionChange() {
     const selection = window.getSelection();
@@ -71,7 +87,7 @@ onMounted(() => {
 <template>
     <div class="flex flex-col-reverse lg:flex-row items-top justify-center gap-3 max-w-[1240px] m-auto editor-layout">
         <div v-if="editor" class="editor-toolbar flex flex-col gap-2">
-            <div class="cursor-pointer px-4 text-sm py-1 bg-header text-secondary-foreground border border-dashed rounded-lg border-secondary-foreground w-full h-fit">
+            <div class="select-blocks cursor-pointer px-4 text-sm py-1 bg-header text-secondary-foreground w-full h-fit">
                 <p class="text-lg">Select block</p>
                 <div class="menu flex flex-col max-h-60 min-w-[250px] overflow-auto gap-2 bg-header p-2">
                     <button
@@ -82,6 +98,46 @@ onMounted(() => {
                         <font-awesome icon="font" class="text-muted-foreground"/>
                         Paragraph
                     </button>
+                    <UiAlertDialog>
+                        <UiAlertDialogTrigger 
+                            class="text-left hover:bg-secondary px-2 py-1 rounded transition-all">
+                            <font-awesome icon="circle-play" class="text-muted-foreground"/>
+                            Video
+                        </UiAlertDialogTrigger>
+                        <UiAlertDialogContent>
+                            <UiAlertDialogHeader>
+                                <UiAlertDialogTitle>Insert video</UiAlertDialogTitle>
+                                <UiAlertDialogDescription class="flex flex-col gap-2">
+                                    <p>Please enter the URL of the youtube video you want to insert.</p>
+                                    <UiInput type="text" v-model="videoUrl" placeholder="Enter youtube URL" class="w-full p-2 border rounded"/>
+                                </UiAlertDialogDescription>
+                            </UiAlertDialogHeader>
+                            <UiAlertDialogFooter>
+                                <UiAlertDialogCancel>Cancel</UiAlertDialogCancel>
+                                <UiAlertDialogAction @click="addVideo">Continue</UiAlertDialogAction>
+                            </UiAlertDialogFooter>
+                        </UiAlertDialogContent>
+                    </UiAlertDialog>
+                    <UiAlertDialog>
+                        <UiAlertDialogTrigger 
+                            class="text-left hover:bg-secondary px-2 py-1 rounded transition-all">
+                            <font-awesome icon="image" class="text-muted-foreground"/>
+                            Image
+                        </UiAlertDialogTrigger>
+                        <UiAlertDialogContent>
+                            <UiAlertDialogHeader>
+                                <UiAlertDialogTitle>Insert Image</UiAlertDialogTitle>
+                                <UiAlertDialogDescription class="flex flex-col gap-2">
+                                    <p>Please enter the URL of the image you want to insert.</p>
+                                    <UiInput type="text" v-model="imageUrl" placeholder="Enter image URL" class="w-full p-2 border rounded"/>
+                                </UiAlertDialogDescription>
+                            </UiAlertDialogHeader>
+                            <UiAlertDialogFooter>
+                                <UiAlertDialogCancel>Cancel</UiAlertDialogCancel>
+                                <UiAlertDialogAction @click="addImage">Continue</UiAlertDialogAction>
+                            </UiAlertDialogFooter>
+                        </UiAlertDialogContent>
+                    </UiAlertDialog>
                     <button
                         class="text-left hover:bg-secondary px-2 py-1 rounded transition-all"
                         @click="editor.chain().focus().toggleHeading({ level: 1 }).run()"
@@ -189,7 +245,7 @@ onMounted(() => {
     
                 </div>
             </div>
-            <div class="meta-data-conteiner px-4 text-sm py-1 bg-header text-secondary-foreground border border-dashed rounded-lg border-secondary-foreground w-full h-fit">
+            <div class="meta-data-container px-4 text-sm py-1 bg-header text-secondary-foreground w-full h-fit">
                 <p class="text-lg">Specify metadata</p>
                 <div class="meta-data flex flex-col gap-2 p-2">
                     <div class="meta-data-author">
@@ -203,10 +259,30 @@ onMounted(() => {
                 </div>
             </div>
             <div class="send-button">
-                <UiButton variant="secondary" class="w-full bg-header hover:bg-secondary border border-dashed border-secondary-foreground ">Send</UiButton>
+                <UiButton variant="secondary" class="w-full bg-header hover:bg-secondary rounded-none">Send</UiButton>
+            </div>
+            <div class="memo-authors bg-header text-secondary-foreground px-4 py-1 rounded-lg border border-dashed border-foreground">
+                <div class="memo-title text-lg text-center">
+                    Memo for authors
+                </div>
+                <div class="memo-content text-sm flex flex-col gap-4">
+                    <p>
+                        <font-awesome icon="thumbs-up" size="xl" class="text-muted-foreground mr-2"/>
+                        Follow Community Guidelines
+                    </p>
+                    <p>
+                        <font-awesome icon="newspaper" size="xl" class="text-muted-foreground mr-2"/>
+                        Follow the advice and format your posts carefully
+                    </p>
+                </div>
             </div>
         </div>
-        <TiptapEditorContent :editor="editor" :class="editorStyles" class="editor-textarea min-h-96 h-fit" />
+        <div class="TiptapEditorContent flex flex-col gap-4 w-full">
+            <div class="tiptap-header p-2 px-4 bg-header text-xl text-secondary-foreground">
+                Creating an article
+            </div>
+            <TiptapEditorContent :editor="editor" :class="editorStyles" class="editor-textarea min-h-96 h-fit" />
+        </div>
         <div v-if="editor" v-show="isSelectMenuOpen" class="cursor-toolbar flex flex-row flex-wrap w-fit absolute z-[1] bg-header border border-dashed border-secondary-foreground rounded p-3" :style="{ position: 'absolute', top: menuPosition.top + 'px', left: menuPosition.left + 'px' }">
             <button
                 class="text-left hover:bg-secondary px-2 py-1 rounded transition-all"
@@ -261,9 +337,35 @@ onMounted(() => {
   </template>
 
 <style scoped lang="css">
-        .menu{
-            scrollbar-width: none;
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .menu{
+        scrollbar-width: none;
+    }
+    .send-button, .tiptap-header{
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #292929, #b4b4b4, white, #e5e5e5, #292929) 1;
+    }
+    
+    .meta-data-container, .select-blocks{
+        transition: all .3s ease-in-out;
+        --angle: 0deg;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #292929, #b4b4b4, white, #e5e5e5, #292929) 1;
+    }
+    .meta-data-container:hover, .select-blocks:hover{
+        border-image: conic-gradient(from var(--angle), #292929, white, #292929, #e5e5e5, #292929) 1;
+        animation: 10s rotate linear infinite;
+    }
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
         }
+    }
+    
 </style>
   
  

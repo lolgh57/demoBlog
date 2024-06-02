@@ -58,7 +58,8 @@ export default defineNuxtConfig({
       solid: [
         'font', 'italic', 'bold', 'strikethrough', 'code', 'eraser',
         'heading', 'list-ul', 'list-ol', 'quote-left', 'minus', 
-        'rotate-left', 'rotate-right', 'square-caret-down', 'align-left', 'align-right', 'align-justify', 'align-center'
+        'rotate-left', 'rotate-right', 'square-caret-down', 'align-left', 'align-right', 'align-justify',
+        'align-center', 'image', 'circle-play', 'thumbs-up', 'newspaper'
       ],
     }
   }
