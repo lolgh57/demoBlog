@@ -5,6 +5,7 @@
 @layer base {
   
   .dark {
+    --arcanum: #091a28;
     --bg-header: #292929;
     --background: #121212;
     --foreground: #e5e5e5;
@@ -44,6 +45,17 @@
   body {
     @apply bg-background text-foreground text-base;
     font-family: 'Lato', sans-serif;
+  }
+  h1{
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    margin-bottom: .6em;
+  }
+  h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: .6em;
   }
   .tiptap p.is-empty::before {
     color: #444444;

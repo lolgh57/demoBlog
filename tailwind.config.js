@@ -35,6 +35,7 @@ module.exports = {
         DEFAULT: "ease-in-out"
       },
       colors: {
+        arcanum: "var(--arcanum)",
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",
