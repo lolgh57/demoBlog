@@ -1056,6 +1056,35 @@
     </section>
     <section class="content-block">
       <div
+        class="content-block-cnt rounded-2xl bg-blue-100 dark:bg-gray-800 xl:max-w-5xl mx-auto grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2"
+      >
+        <h3
+          class="mb-4 text-xl md:text-2xl xl:text-3xl flex items-center justify-center"
+        >
+          Course authors
+        </h3>
+        <div
+          class="bg-white dark:bg-gray-800 relative overflow-hidden group rounded-xl p-5"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              src="https://arcanum12th.education/employees/denis/denis.webp"
+              class="w-32 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
+            />
+            <div class="w-fit transition-all transform duration-500">
+              <h1 class="text-gray-600 dark:text-gray-200">
+                Lord Denis Banchenko
+              </h1>
+              <p class="text-gray-400">
+                Founder and Rector of the Arcanum 12 Academy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-block">
+      <div
         class="content-block-cnt xl:max-w-5xl mx-auto text-center mt-10 mb-10 sm:mt-20 sm:mb-20"
       >
         <h3 class="mb-4 text-xl md:text-2xl xl:text-3xl">
@@ -1220,9 +1249,6 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="content-block">
-      <div class="content-block-cnt"></div>
     </section>
   </main>
 </template>
