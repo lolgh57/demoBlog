@@ -130,7 +130,7 @@
       </div>
     </div>
   </section>
-  <section class="content-block w-full h-full">
+  <section class="content-block w-full min-h-screen">
     <div
       class="content-block-cnt relative z-20 max-w-7xl mx-auto h-full px-5 py-20"
     >
@@ -141,8 +141,74 @@
           What You
           <span class="text-blue-600"> Will Learn</span>
         </h2>
-        <div class="relative w-full flex justify-center">
-          <div class="relative w-1 h-full bg-gray-300"></div>
+        <div class="relative w-full flex flex-col items-center h-[90vh]">
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 h-full w-full flex flex-col justify-around items-center"
+          >
+            <div
+              class="relative flex items-center justify-start mb-4 w-full h-full"
+            >
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 h-fit w-fit px-3 py-1 rounded-full border border-blue-600 text-center z-10 bg-white dark:bg-gray-800"
+              >
+                1
+              </div>
+              <div class="w-1/2 text-right pr-8">
+                Learn to make professional interpretations and read card
+                combinations
+              </div>
+            </div>
+            <div
+              class="relative flex items-center justify-end mb-4 w-full h-full"
+            >
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 h-fit w-fit px-3 py-1 rounded-full border border-blue-600 text-center z-10 bg-white dark:bg-gray-800"
+              >
+                2
+              </div>
+              <div class="w-1/2 text-left pl-8">
+                Develop or enhance your intuition
+              </div>
+            </div>
+            <div
+              class="relative flex items-center justify-start mb-4 w-full h-full"
+            >
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 h-fit w-fit px-3 py-1 rounded-full border border-blue-600 text-center z-10 bg-white dark:bg-gray-800"
+              >
+                3
+              </div>
+              <div class="w-1/2 text-right pr-8">
+                You will understand where to grow and what to pay attention to
+                in order to achieve what you want. At the end of the course you
+                will become a confident tarotologist
+              </div>
+            </div>
+            <div
+              class="relative flex items-center justify-end mb-4 w-full h-full"
+            >
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 h-fit w-fit px-3 py-1 rounded-full border border-blue-600 text-center z-10 bg-white dark:bg-gray-800"
+              >
+                4
+              </div>
+              <div class="w-1/2 text-left pl-8">
+                Control personal and family relationships
+              </div>
+            </div>
+            <div
+              class="relative flex items-center justify-start mb-4 w-full h-full"
+            >
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 h-fit w-fit px-3 py-1 rounded-full border border-blue-600 text-center z-10 bg-white dark:bg-gray-800"
+              >
+                5
+              </div>
+              <div class="w-1/2 text-right pr-8">
+                Finding the right and best solutions
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

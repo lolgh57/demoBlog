@@ -44,6 +44,8 @@
   body {
     @apply bg-background text-foreground text-base;
     font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 100%;
   }
 
   .tiptap p.is-empty::before {
