@@ -300,7 +300,7 @@
             <span class="text-xs mt-1 ml-1 text-red-500">USD</span>
           </div>
           <a
-            href="/courses/a20f38d9-61b8-44ea-a06f-b767384d1cba/threads/3d8fad11-15db-4360-820c-34abc23d23b1/payment"
+            href="/courses/a20f38d9-61b8-44ea-a06f-b767384d1cba/threads/3d8fad11-15db-4360-820c-34abc23d23b1"
             class="flex justify-center"
             ><button
               type="button"
