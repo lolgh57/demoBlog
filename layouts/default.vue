@@ -4,7 +4,7 @@
   <section class="min-h-screen flex flex-col">
     <LayoutHeader />
     <div
-      class="flex-grow w-full h-full bg-arcanum pt-[7rem] md:pt-0"
+      class="flex-grow w-full h-full bg-light dark:bg-arcanum pt-[7rem] md:pt-0"
       :class="{
         dark: $colorMode.value === 'dark',
         light: $colorMode.value === 'light',
