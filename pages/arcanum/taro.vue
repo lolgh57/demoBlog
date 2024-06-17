@@ -299,9 +299,7 @@
             <span>1480</span>
             <span class="text-xs mt-1 ml-1 text-red-500">USD</span>
           </div>
-          <a
-            href="/courses/a20f38d9-61b8-44ea-a06f-b767384d1cba/threads/3d8fad11-15db-4360-820c-34abc23d23b1"
-            class="flex justify-center"
+          <a href="#" class="flex justify-center"
             ><button
               type="button"
               class="text-white bg-blue-700 mt-3 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-12 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
